@@ -36,6 +36,8 @@ app.use((req, res, next) => {
   proxy(req, res, next);
 });
 
-app.listen(3010, () => {
-  console.log("Proxy server running on port 3010");
+app.listen(3000, "0.0.0.0", () => {
+  console.log(
+    "Proxy server running on port 3000, accessible from all interfaces"
+  );
 });
